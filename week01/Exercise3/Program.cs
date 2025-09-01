@@ -14,7 +14,7 @@ class Program
 
             do
             {
-                Console.WriteLine("What is your guess? ");
+                Console.Write("What is your guess? ");
                 string userGuess = Console.ReadLine();
                 guess = int.Parse(userGuess);
 
