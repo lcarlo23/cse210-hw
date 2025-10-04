@@ -8,6 +8,7 @@ public class ListingActivity : Activity
     {
         _name = "Listing Activity";
         _description = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.";
+        _duration = 10;
         _prompts = new List<string>
         {
             "Who are people that you appreciate?",

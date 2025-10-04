@@ -2,7 +2,7 @@ public class Activity
 {
     protected string _name;
     protected string _description;
-    protected int _duration = 10;
+    protected int _duration;
 
     public Activity()
     {
@@ -21,9 +21,13 @@ public class Activity
 
         string userDuration = Console.ReadLine();
 
-        if (!int.TryParse(userDuration, out _duration))
+        if (int.TryParse(userDuration, out int intDuration))
         {
-            Console.Write("Your input is invalid, the default duration for the activity will be 10 seconds. ");
+            _duration = intDuration;
+        }
+        else
+        {
+            Console.Write($"Your input is invalid, the default duration for the activity will be {_duration} seconds. ");
             ShowSpinner(3);
         }
 

@@ -4,6 +4,7 @@ public class BreathingActivity : Activity
     {
         _name = "Breathing Activity";
         _description = "This activity will help you relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.";
+        _duration = 20;
     }
 
     public void Run()
